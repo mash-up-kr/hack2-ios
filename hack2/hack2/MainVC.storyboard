@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="12c-1g-qzA">
             <objects>
-                <viewController id="F7Q-ud-YCQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="F7Q-ud-YCQ" customClass="MainVC" customModule="hack2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6FD-Kn-uoC"/>
                         <viewControllerLayoutGuide type="bottom" id="CCi-n6-Auo"/>

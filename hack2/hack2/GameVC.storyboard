@@ -12,7 +12,7 @@
         <!--GameVC-->
         <scene sceneID="j7u-gT-j7F">
             <objects>
-                <viewController id="qD1-Jm-YGp" customClass="GameVC" customModule="hack2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameVC" id="qD1-Jm-YGp" customClass="GameVC" customModule="hack2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F12-MS-cyy"/>
                         <viewControllerLayoutGuide type="bottom" id="UDl-X9-XTk"/>
