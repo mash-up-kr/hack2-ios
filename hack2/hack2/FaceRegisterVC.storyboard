@@ -155,6 +155,10 @@
                             <constraint firstAttribute="trailing" secondItem="cBn-tW-juB" secondAttribute="trailing" constant="40" id="xVe-2Q-QoY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceImage" destination="fAb-nt-qVW" id="JHY-T3-fMb"/>
+                        <outlet property="faceImageView" destination="fAb-nt-qVW" id="V5K-jF-xEU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXw-0e-Zy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

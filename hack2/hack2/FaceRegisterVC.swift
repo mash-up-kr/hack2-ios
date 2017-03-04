@@ -13,6 +13,7 @@ class FaceRegisterVC: UIViewController {
     
     // MARK: - Properties
     
+    @IBOutlet weak var faceImageView: UIImageView!
     let imagePicker = UIImagePickerController()
     
     // MARK: - Override Methods
@@ -45,11 +46,15 @@ class FaceRegisterVC: UIViewController {
 extension FaceRegisterVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            faceImageView.contentMode = .scaleAspectFit
+            faceImageView.image = pickedImage
+        }
+        dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-
+        dismiss(animated: true, completion: nil)
     }
     
 }
