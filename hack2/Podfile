@@ -5,6 +5,7 @@ target 'hack2' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'Hero'
+  pod 'SwiftyJSON'
 end
 
 use_frameworks!
