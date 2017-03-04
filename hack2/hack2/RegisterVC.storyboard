@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--RegisterVC-->
+        <!--회원가입-->
         <scene sceneID="Bhj-ox-fjN">
             <objects>
                 <viewController storyboardIdentifier="RegisterVC" id="gA4-cK-cLJ" customClass="RegisterVC" customModule="hack2" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Nnq-tY-i5T">
                                         <rect key="frame" x="8" y="284" width="295" height="220"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="INo-i4-PFe">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="INo-i4-PFe">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="Azr-jQ-C4p"/>
@@ -58,9 +58,9 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpW-Qo-35i">
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpW-Qo-35i">
                                                 <rect key="frame" x="0.0" y="160" width="295" height="60"/>
                                                 <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -76,6 +76,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nextButtonDidClick:" destination="gA4-cK-cLJ" eventType="touchUpInside" id="hzG-ml-PTW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -102,9 +105,15 @@
                             <constraint firstItem="DZa-XB-4t1" firstAttribute="leading" secondItem="6Fd-is-ij2" secondAttribute="leading" constant="32" id="gN9-Qg-TA7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="회원가입" id="ZAf-8N-y40">
+                        <barButtonItem key="backBarButtonItem" title=" " id="bpi-Pu-PNW"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="contentView" destination="DZa-XB-4t1" id="yCT-S6-Iop"/>
                         <outlet property="contentViewBottomConstraint" destination="5w8-Uv-uAL" id="Utp-zp-8Vo"/>
+                        <outlet property="emailTextField" destination="INo-i4-PFe" id="c7H-Z2-RD0"/>
+                        <outlet property="nextButton" destination="EpW-Qo-35i" id="fr2-mT-6KC"/>
+                        <outlet property="passwordTextField" destination="Qg3-6L-M3o" id="Axw-4F-kgc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNI-VW-Ylo" userLabel="First Responder" sceneMemberID="firstResponder"/>
