@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KDI-NZ-N7w">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="BI6-8L-kCM">
+            <objects>
+                <navigationController id="KDI-NZ-N7w" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BPR-3L-HFU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="F7Q-ud-YCQ" kind="relationship" relationship="rootViewController" id="vDY-9l-EZe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmg-bw-vkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1049" y="42"/>
+        </scene>
         <!--MainVC-->
         <scene sceneID="12c-1g-qzA">
             <objects>
@@ -20,8 +36,48 @@
                     <view key="view" contentMode="scaleToFill" id="Lxa-iC-JGT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hz4-GP-Bya">
+                                <rect key="frame" x="0.0" y="269.5" width="375" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLi-Zk-jTh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                        <color key="backgroundColor" red="0.67113084639701048" green="0.79706202882010202" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="월드컵하기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gameStartButtonDidClick:" destination="F7Q-ud-YCQ" eventType="touchUpInside" id="e5d-XA-IbY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGb-6h-vuK">
+                                        <rect key="frame" x="0.0" y="46" width="375" height="36"/>
+                                        <color key="backgroundColor" red="0.51913745061832917" green="0.72119061286486597" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="마이페이지">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckb-gf-IXr">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="36"/>
+                                        <color key="backgroundColor" red="0.51061829840051731" green="0.59428583382192013" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="내 이상형">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hz4-GP-Bya" secondAttribute="trailing" id="Lyj-cm-oKI"/>
+                            <constraint firstItem="hz4-GP-Bya" firstAttribute="centerY" secondItem="Lxa-iC-JGT" secondAttribute="centerY" id="MeW-yl-u95"/>
+                            <constraint firstItem="hz4-GP-Bya" firstAttribute="leading" secondItem="Lxa-iC-JGT" secondAttribute="leading" id="sqJ-0c-VrO"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Hn7-we-LL0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cjb-i2-WsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
