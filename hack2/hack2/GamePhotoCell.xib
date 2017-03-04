@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GamePhotoCell" customModule="hack2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vEI-Z0-5dU">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmr-I2-s8Z">
+                        <rect key="frame" x="81" y="81" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="eEM-OZ-I2B"/>
+                            <constraint firstAttribute="height" constant="33" id="z0R-CR-8bN"/>
+                        </constraints>
+                        <state key="normal" image="photoWhiteOval"/>
+                        <state key="selected" image="photoChecked"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="vEI-Z0-5dU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2dU-wX-wyc"/>
+                <constraint firstAttribute="bottom" secondItem="vEI-Z0-5dU" secondAttribute="bottom" id="3YQ-Ej-t08"/>
+                <constraint firstItem="vEI-Z0-5dU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5yC-ka-a8f"/>
+                <constraint firstAttribute="trailing" secondItem="vEI-Z0-5dU" secondAttribute="trailing" id="AMw-7I-Kzi"/>
+                <constraint firstAttribute="trailing" secondItem="Xmr-I2-s8Z" secondAttribute="trailing" constant="16" id="UKP-5w-YMn"/>
+                <constraint firstAttribute="bottom" secondItem="Xmr-I2-s8Z" secondAttribute="bottom" constant="16" id="ehr-0t-ebz"/>
+            </constraints>
+            <size key="customSize" width="69" height="67"/>
+            <connections>
+                <outlet property="imageView" destination="vEI-Z0-5dU" id="94o-Ax-2bV"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="60.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photoChecked" width="37" height="37"/>
+        <image name="photoWhiteOval" width="37" height="37"/>
+    </resources>
+</document>

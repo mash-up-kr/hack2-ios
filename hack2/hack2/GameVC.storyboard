@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,14 +18,94 @@
                         <viewControllerLayoutGuide type="bottom" id="UDl-X9-XTk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f0S-2v-8v8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eak-m0-xTc">
+                                <rect key="frame" x="20" y="40" width="38" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="HYH-Wd-cFZ"/>
+                                    <constraint firstAttribute="width" constant="38" id="o04-g4-MfX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <state key="normal" title="종료">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gameExitButtonPressed:" destination="qD1-Jm-YGp" eventType="touchUpInside" id="N9X-rB-moc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwl-57-tmv">
+                                <rect key="frame" x="356" y="40" width="38" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Rsb-YP-zzC"/>
+                                    <constraint firstAttribute="width" constant="38" id="pyw-oz-ikN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <state key="normal" title="완료">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="completeButtonPressed:" destination="qD1-Jm-YGp" eventType="touchUpInside" id="4jL-9c-Nwd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마음에 드는 손을 선택해주세요 (최대 3개)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgE-4C-BTq">
+                                <rect key="frame" x="43.666666666666657" y="92" width="327" height="24"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P8U-hK-Uyd">
+                                <rect key="frame" x="17" y="178" width="380" height="558"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="10" id="dIP-Q4-xlI">
+                                    <size key="itemSize" width="180" height="180"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Dko-ee-Tj2">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nVb-J7-N9N">
+                                        <rect key="frame" x="200" y="0.0" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UDl-X9-XTk" firstAttribute="top" secondItem="P8U-hK-Uyd" secondAttribute="bottom" id="0m6-RP-5ZS"/>
+                            <constraint firstItem="Eak-m0-xTc" firstAttribute="leading" secondItem="f0S-2v-8v8" secondAttribute="leading" constant="20" id="Jn2-3I-UqK"/>
+                            <constraint firstItem="P8U-hK-Uyd" firstAttribute="top" secondItem="LgE-4C-BTq" secondAttribute="bottom" constant="62" id="Mu9-xX-oXa"/>
+                            <constraint firstItem="P8U-hK-Uyd" firstAttribute="leading" secondItem="f0S-2v-8v8" secondAttribute="leading" constant="17" id="MxZ-xw-DOs"/>
+                            <constraint firstItem="Pwl-57-tmv" firstAttribute="top" secondItem="F12-MS-cyy" secondAttribute="bottom" constant="20" id="bBo-xA-FMB"/>
+                            <constraint firstItem="Eak-m0-xTc" firstAttribute="top" secondItem="F12-MS-cyy" secondAttribute="bottom" constant="20" id="bjS-nx-yn3"/>
+                            <constraint firstAttribute="trailing" secondItem="Pwl-57-tmv" secondAttribute="trailing" constant="20" id="eY0-r4-L7Q"/>
+                            <constraint firstAttribute="trailing" secondItem="P8U-hK-Uyd" secondAttribute="trailing" constant="17" id="f0k-i7-IcL"/>
+                            <constraint firstItem="LgE-4C-BTq" firstAttribute="centerX" secondItem="f0S-2v-8v8" secondAttribute="centerX" id="iEK-nK-qFR"/>
+                            <constraint firstItem="LgE-4C-BTq" firstAttribute="top" secondItem="Eak-m0-xTc" secondAttribute="bottom" constant="29" id="ia4-7d-dti"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8gC-oe-NDk"/>
+                    <connections>
+                        <outlet property="photoCollectionView" destination="P8U-hK-Uyd" id="dfX-EY-rvD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3EQ-SX-84v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-183" y="-166"/>
+            <point key="canvasLocation" x="756" y="-166.8665667166417"/>
         </scene>
     </scenes>
 </document>
