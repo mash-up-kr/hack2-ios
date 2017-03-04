@@ -388,7 +388,6 @@
 				80FE23C91E6B31B2001F3F51 /* DetailRegisterVC.swift in Sources */,
 				60ED07981E6B2EAB00687F40 /* GameResultWaitingVC.swift in Sources */,
 				60ED078B1E6AF7B900687F40 /* GamePhotoCell.swift in Sources */,
-				60ED07841E6AC2AC00687F40 /* MainVC.swift in Sources */,
 				60ED07901E6B019F00687F40 /* GameResultVC.swift in Sources */,
 				60ED075C1E6AB9E200687F40 /* AppDelegate.swift in Sources */,
 				808220F41E6AE01F00BDDFE5 /* LoginVC.swift in Sources */,
