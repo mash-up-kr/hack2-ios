@@ -31,14 +31,16 @@ class MainVC: UIViewController {
     @IBAction func gameStartButtonDidClick(_ sender: Any) {
         let gameVC = UIStoryboard(name: "GameVC", bundle: nil).instantiateViewController(withIdentifier: "GameVC") as! GameVC
         
-        let urlString = "http://192.168.0.25:8080/api/games"
+        let urlString = "http://192.168.0.25:8081/api/games"
         if let url = URL(string: urlString) {
-            if let userId = UserDefaults.standard.object(forKey: "user_id") as? String {
-                Alamofire.request(url, method: .post, parameters: ["user": userId], encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { (response) in
+            let parameters = ["user": ["user_id": "a"]]
+//            if let userId = UserDefaults.standard.object(forKey: "user_id") as? String {
+                Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON(completionHandler: { (response) in
                     
                     switch response.result {
                     case .success(let value):
                         let resultJSON = JSON(value)
+                        print(resultJSON)
                         let item = resultJSON["item"]
                         
                         gameVC.gameId = item["id"].intValue
@@ -50,7 +52,7 @@ class MainVC: UIViewController {
                         break;
                     }
                 })
-            }
+//            }
             
         }
         

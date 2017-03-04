@@ -18,18 +18,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vEI-Z0-5dU">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vEI-Z0-5dU">
                         <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmr-I2-s8Z">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoWhiteOval" translatesAutoresizingMaskIntoConstraints="NO" id="q1X-k5-pzb">
                         <rect key="frame" x="81" y="81" width="33" height="33"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="33" id="eEM-OZ-I2B"/>
-                            <constraint firstAttribute="height" constant="33" id="z0R-CR-8bN"/>
+                            <constraint firstAttribute="width" constant="33" id="XJK-Hp-uey"/>
+                            <constraint firstAttribute="height" constant="33" id="yG9-YK-tnQ"/>
                         </constraints>
-                        <state key="normal" image="photoWhiteOval"/>
-                        <state key="selected" image="photoChecked"/>
-                    </button>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
@@ -37,18 +35,18 @@
                 <constraint firstAttribute="bottom" secondItem="vEI-Z0-5dU" secondAttribute="bottom" id="3YQ-Ej-t08"/>
                 <constraint firstItem="vEI-Z0-5dU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5yC-ka-a8f"/>
                 <constraint firstAttribute="trailing" secondItem="vEI-Z0-5dU" secondAttribute="trailing" id="AMw-7I-Kzi"/>
-                <constraint firstAttribute="trailing" secondItem="Xmr-I2-s8Z" secondAttribute="trailing" constant="16" id="UKP-5w-YMn"/>
-                <constraint firstAttribute="bottom" secondItem="Xmr-I2-s8Z" secondAttribute="bottom" constant="16" id="ehr-0t-ebz"/>
+                <constraint firstAttribute="bottom" secondItem="q1X-k5-pzb" secondAttribute="bottom" constant="16" id="TYg-bP-VlV"/>
+                <constraint firstAttribute="trailing" secondItem="q1X-k5-pzb" secondAttribute="trailing" constant="16" id="c7Q-Ic-cQs"/>
             </constraints>
             <size key="customSize" width="69" height="67"/>
             <connections>
+                <outlet property="checkedImageView" destination="q1X-k5-pzb" id="Tzc-pd-Zmh"/>
                 <outlet property="imageView" destination="vEI-Z0-5dU" id="94o-Ax-2bV"/>
             </connections>
-            <point key="canvasLocation" x="34.5" y="60.5"/>
+            <point key="canvasLocation" x="34" y="60"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="photoChecked" width="37" height="37"/>
         <image name="photoWhiteOval" width="37" height="37"/>
     </resources>
 </document>

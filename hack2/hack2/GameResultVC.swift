@@ -21,12 +21,12 @@ class GameResultVC: UIViewController {
     @IBOutlet weak var mainButton: UIButton!
     
     var timerCount: Int = 5
-    var isInformationBlock: Bool = false {
-        didSet {
-            
-            informationBlockImageView.isHidden = false
-        }
-    }
+//    var isInformationBlock: Bool = false {
+//        didSet {
+//            
+//            informationBlockImageView.isHidden = false
+//        }
+//    }
     
     override func viewDidLoad() {
         
@@ -52,7 +52,11 @@ class GameResultVC: UIViewController {
         let delayTime = DispatchTime.now() + 5
         DispatchQueue.main.asyncAfter(deadline: delayTime) {
             
-            self.isInformationBlock = true
+            for view in self.informationView.subviews {
+                view.isHidden = true
+            }
+            
+            self.informationBlockImageView.isHidden = false
             
             timer.invalidate()
             self.mainButton.setTitle("새로운 이상형 찾기", for: UIControlState.normal)

@@ -26,7 +26,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pg3-aV-rTW">
                                 <rect key="frame" x="36" y="69" width="342" height="522.66666666666663"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1vv-E8-fVq">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="1vv-E8-fVq">
                                         <rect key="frame" x="0.0" y="0.0" width="342" height="341.66666666666669"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xd-tq-VaR">
@@ -64,24 +64,24 @@
                                             <constraint firstItem="kht-Aa-RWr" firstAttribute="leading" secondItem="hNg-KX-nco" secondAttribute="leading" id="wqY-x8-P8p"/>
                                         </constraints>
                                     </view>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9F8BC559-81BD-4F3E-B3E4-E20263B20F85" translatesAutoresizingMaskIntoConstraints="NO" id="uNw-S6-aLr">
-                                        <rect key="frame" x="0.0" y="361.66666666666663" width="342" height="140.99999999999994"/>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3E63796D-7221-4414-811D-BA45513966C7" translatesAutoresizingMaskIntoConstraints="NO" id="uNw-S6-aLr">
+                                        <rect key="frame" x="0.0" y="341.66666666666663" width="342" height="180.99999999999989"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="uNw-S6-aLr" firstAttribute="top" secondItem="3xd-tq-VaR" secondAttribute="top" id="0SB-lr-CqM"/>
+                                    <constraint firstItem="uNw-S6-aLr" firstAttribute="bottom" secondItem="3xd-tq-VaR" secondAttribute="bottom" id="132-Fj-QG3"/>
                                     <constraint firstAttribute="bottom" secondItem="3xd-tq-VaR" secondAttribute="bottom" id="E9I-bx-MSm"/>
                                     <constraint firstAttribute="trailing" secondItem="1vv-E8-fVq" secondAttribute="trailing" id="L2r-lm-onr"/>
                                     <constraint firstItem="3xd-tq-VaR" firstAttribute="top" secondItem="1vv-E8-fVq" secondAttribute="bottom" id="LM3-uZ-rak"/>
-                                    <constraint firstItem="3xd-tq-VaR" firstAttribute="leading" secondItem="uNw-S6-aLr" secondAttribute="leading" id="NTj-Mi-98a"/>
                                     <constraint firstAttribute="trailing" secondItem="3xd-tq-VaR" secondAttribute="trailing" id="OLd-Fd-OPH"/>
-                                    <constraint firstItem="3xd-tq-VaR" firstAttribute="bottom" secondItem="uNw-S6-aLr" secondAttribute="bottom" constant="20" id="Pdo-cP-dFG"/>
+                                    <constraint firstItem="uNw-S6-aLr" firstAttribute="trailing" secondItem="3xd-tq-VaR" secondAttribute="trailing" id="WbX-LK-07S"/>
                                     <constraint firstItem="1vv-E8-fVq" firstAttribute="top" secondItem="pg3-aV-rTW" secondAttribute="top" id="Xqg-3U-Kod"/>
-                                    <constraint firstItem="3xd-tq-VaR" firstAttribute="trailing" secondItem="uNw-S6-aLr" secondAttribute="trailing" id="ZOS-0Z-OCT"/>
                                     <constraint firstItem="3xd-tq-VaR" firstAttribute="leading" secondItem="pg3-aV-rTW" secondAttribute="leading" id="dPc-Fo-wcs"/>
                                     <constraint firstItem="3xd-tq-VaR" firstAttribute="height" secondItem="1vv-E8-fVq" secondAttribute="height" multiplier="0.53" id="hKl-hG-AuX"/>
                                     <constraint firstItem="1vv-E8-fVq" firstAttribute="leading" secondItem="pg3-aV-rTW" secondAttribute="leading" id="kjZ-7x-MBE"/>
-                                    <constraint firstItem="3xd-tq-VaR" firstAttribute="top" secondItem="uNw-S6-aLr" secondAttribute="top" constant="-20" id="zbd-HC-3yr"/>
+                                    <constraint firstItem="uNw-S6-aLr" firstAttribute="leading" secondItem="3xd-tq-VaR" secondAttribute="leading" id="yst-9d-YiF"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0F-bA-xhi">
@@ -138,7 +138,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="9F8BC559-81BD-4F3E-B3E4-E20263B20F85" width="222" height="175">
+        <image name="3E63796D-7221-4414-811D-BA45513966C7" width="222" height="175">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -2782,5 +2782,6 @@ AAJpMQACaTkAAmk8AAJpQQACaUkAAmlMAAJpXgACaWEAAmlmAAAAAAAABAEAAAAAAAAAQQAAAAAAAAAA
 AAAAAAACaWg
 </mutableData>
         </image>
+        <image name="profile" width="960" height="1280"/>
     </resources>
 </document>
