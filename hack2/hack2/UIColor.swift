@@ -16,8 +16,8 @@ extension UIColor {
     }
     
     struct SubColor {
-        static let Black = UIColor(red:0.26, green:0.26, blue:0.26, alpha:1.0)
-        static let Purple = UIColor(red:0.21, green:0.18, blue:0.38, alpha:1.0)
+        static let DarkBlack = UIColor(red:0.26, green:0.26, blue:0.26, alpha:1.0)
+        static let DarkPurple = UIColor(red:0.21, green:0.18, blue:0.38, alpha:1.0)
         static let DarkBlue = UIColor(red:0.30, green:0.44, blue:0.62, alpha:1.0)
     }
     
