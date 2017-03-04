@@ -15,6 +15,10 @@
 		60ED07801E6AC26A00687F40 /* GameVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60ED077F1E6AC26A00687F40 /* GameVC.storyboard */; };
 		60ED07821E6AC28600687F40 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED07811E6AC28600687F40 /* GameVC.swift */; };
 		60ED07841E6AC2AC00687F40 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED07831E6AC2AC00687F40 /* MainVC.swift */; };
+		808220F01E6AE00400BDDFE5 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808220EF1E6AE00400BDDFE5 /* RegisterVC.swift */; };
+		808220F21E6AE01300BDDFE5 /* RegisterVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808220F11E6AE01300BDDFE5 /* RegisterVC.storyboard */; };
+		808220F41E6AE01F00BDDFE5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808220F31E6AE01F00BDDFE5 /* LoginVC.swift */; };
+		808220F61E6AE05800BDDFE5 /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808220F51E6AE05800BDDFE5 /* LoginVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		60ED077F1E6AC26A00687F40 /* GameVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameVC.storyboard; sourceTree = "<group>"; };
 		60ED07811E6AC28600687F40 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		60ED07831E6AC2AC00687F40 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		808220EF1E6AE00400BDDFE5 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		808220F11E6AE01300BDDFE5 /* RegisterVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterVC.storyboard; sourceTree = "<group>"; };
+		808220F31E6AE01F00BDDFE5 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		808220F51E6AE05800BDDFE5 /* LoginVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginVC.storyboard; sourceTree = "<group>"; };
 		E13E64095B177F54ED5D8FE7 /* Pods-hack2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hack2.release.xcconfig"; path = "Pods/Target Support Files/Pods-hack2/Pods-hack2.release.xcconfig"; sourceTree = "<group>"; };
 		EE941A13F833D1EDA96778DD /* Pods-hack2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hack2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hack2/Pods-hack2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,8 +88,8 @@
 				60ED07781E6AC18E00687F40 /* Etc */,
 				60ED076F1E6AC05700687F40 /* Register */,
 				60ED07701E6AC06A00687F40 /* Login */,
-				60ED07711E6AC07E00687F40 /* Tutorial */,
 				60ED07721E6AC08A00687F40 /* Main */,
+				60ED07711E6AC07E00687F40 /* Tutorial */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -98,6 +106,8 @@
 		60ED076F1E6AC05700687F40 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				808220F71E6AE1A200BDDFE5 /* Base */,
+				808220F81E6AE1AA00BDDFE5 /* New Group */,
 			);
 			name = Register;
 			sourceTree = "<group>";
@@ -105,6 +115,8 @@
 		60ED07701E6AC06A00687F40 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				808220F31E6AE01F00BDDFE5 /* LoginVC.swift */,
+				808220F51E6AE05800BDDFE5 /* LoginVC.storyboard */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -181,6 +193,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		808220F71E6AE1A200BDDFE5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				808220EF1E6AE00400BDDFE5 /* RegisterVC.swift */,
+				808220F11E6AE01300BDDFE5 /* RegisterVC.storyboard */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		808220F81E6AE1AA00BDDFE5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		8DA81A9ACD1240A3FEAD4A09 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,8 +281,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808220F21E6AE01300BDDFE5 /* RegisterVC.storyboard in Resources */,
 				60ED077E1E6AC21C00687F40 /* MainVC.storyboard in Resources */,
 				60ED07661E6AB9E200687F40 /* LaunchScreen.storyboard in Resources */,
+				808220F61E6AE05800BDDFE5 /* LoginVC.storyboard in Resources */,
 				60ED07631E6AB9E200687F40 /* Assets.xcassets in Resources */,
 				60ED07801E6AC26A00687F40 /* GameVC.storyboard in Resources */,
 			);
@@ -316,8 +346,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				60ED07821E6AC28600687F40 /* GameVC.swift in Sources */,
+				808220F01E6AE00400BDDFE5 /* RegisterVC.swift in Sources */,
 				60ED07841E6AC2AC00687F40 /* MainVC.swift in Sources */,
 				60ED075C1E6AB9E200687F40 /* AppDelegate.swift in Sources */,
+				808220F41E6AE01F00BDDFE5 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
