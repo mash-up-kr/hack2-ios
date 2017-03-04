@@ -32,4 +32,10 @@ class LoginVC: UIViewController {
         self.navigationController?.pushViewController(RegisterVC, animated: true)
     }
     
+    @IBAction func loginButtonDidClick(_ sender: Any) {
+        let AccountVC = UIStoryboard(name: "AccountVC", bundle: nil).instantiateViewController(withIdentifier: "AccountVC")
+        self.navigationController?.pushViewController(AccountVC, animated: true)
+    }
+    
+    
 }

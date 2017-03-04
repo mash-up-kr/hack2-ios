@@ -69,6 +69,9 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonDidClick:" destination="mAy-Wc-Zq1" eventType="touchUpInside" id="5vM-al-Hwl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -97,7 +100,7 @@
         <scene sceneID="G9X-gW-xo8">
             <objects>
                 <navigationController id="DWi-Cn-9ST" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HQD-pV-bBG">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HQD-pV-bBG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

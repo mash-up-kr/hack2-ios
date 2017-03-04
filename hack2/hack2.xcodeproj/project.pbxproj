@@ -16,6 +16,14 @@
 		60ED07821E6AC28600687F40 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED07811E6AC28600687F40 /* GameVC.swift */; };
 		60ED07841E6AC2AC00687F40 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED07831E6AC2AC00687F40 /* MainVC.swift */; };
 		60ED07861E6AE02600687F40 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED07851E6AE02600687F40 /* UIColor.swift */; };
+		60ED078B1E6AF7B900687F40 /* GamePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED07891E6AF7B900687F40 /* GamePhotoCell.swift */; };
+		60ED078C1E6AF7B900687F40 /* GamePhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60ED078A1E6AF7B900687F40 /* GamePhotoCell.xib */; };
+		60ED07901E6B019F00687F40 /* GameResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED078F1E6B019F00687F40 /* GameResultVC.swift */; };
+		60ED07921E6B020400687F40 /* GameResultVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60ED07911E6B020400687F40 /* GameResultVC.storyboard */; };
+		60ED07981E6B2EAB00687F40 /* GameResultWaitingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED07971E6B2EAB00687F40 /* GameResultWaitingVC.swift */; };
+		60ED079A1E6B2EBB00687F40 /* GameResultWaitingVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60ED07991E6B2EBB00687F40 /* GameResultWaitingVC.storyboard */; };
+		805E52EA1E6B7812000145AD /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805E52E91E6B7812000145AD /* AccountVC.swift */; };
+		805E52EC1E6B781B000145AD /* AccountVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805E52EB1E6B781B000145AD /* AccountVC.storyboard */; };
 		808220F01E6AE00400BDDFE5 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808220EF1E6AE00400BDDFE5 /* RegisterVC.swift */; };
 		808220F21E6AE01300BDDFE5 /* RegisterVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808220F11E6AE01300BDDFE5 /* RegisterVC.storyboard */; };
 		808220F41E6AE01F00BDDFE5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808220F31E6AE01F00BDDFE5 /* LoginVC.swift */; };
@@ -25,12 +33,6 @@
 		80FE23CE1E6B5B41001F3F51 /* FaceRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE23CD1E6B5B41001F3F51 /* FaceRegisterVC.swift */; };
 		80FE23D01E6B5B4F001F3F51 /* FaceRegisterVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FE23CF1E6B5B4F001F3F51 /* FaceRegisterVC.storyboard */; };
 		80FE23D21E6B6BFB001F3F51 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE23D11E6B6BFB001F3F51 /* ImagePicker.swift */; };
-		60ED078B1E6AF7B900687F40 /* GamePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED07891E6AF7B900687F40 /* GamePhotoCell.swift */; };
-		60ED078C1E6AF7B900687F40 /* GamePhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60ED078A1E6AF7B900687F40 /* GamePhotoCell.xib */; };
-		60ED07901E6B019F00687F40 /* GameResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED078F1E6B019F00687F40 /* GameResultVC.swift */; };
-		60ED07921E6B020400687F40 /* GameResultVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60ED07911E6B020400687F40 /* GameResultVC.storyboard */; };
-		60ED07981E6B2EAB00687F40 /* GameResultWaitingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED07971E6B2EAB00687F40 /* GameResultWaitingVC.swift */; };
-		60ED079A1E6B2EBB00687F40 /* GameResultWaitingVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60ED07991E6B2EBB00687F40 /* GameResultWaitingVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,14 @@
 		60ED07811E6AC28600687F40 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		60ED07831E6AC2AC00687F40 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		60ED07851E6AE02600687F40 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		60ED07891E6AF7B900687F40 /* GamePhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePhotoCell.swift; sourceTree = "<group>"; };
+		60ED078A1E6AF7B900687F40 /* GamePhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePhotoCell.xib; sourceTree = "<group>"; };
+		60ED078F1E6B019F00687F40 /* GameResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResultVC.swift; sourceTree = "<group>"; };
+		60ED07911E6B020400687F40 /* GameResultVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameResultVC.storyboard; sourceTree = "<group>"; };
+		60ED07971E6B2EAB00687F40 /* GameResultWaitingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResultWaitingVC.swift; sourceTree = "<group>"; };
+		60ED07991E6B2EBB00687F40 /* GameResultWaitingVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameResultWaitingVC.storyboard; sourceTree = "<group>"; };
+		805E52E91E6B7812000145AD /* AccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		805E52EB1E6B781B000145AD /* AccountVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountVC.storyboard; sourceTree = "<group>"; };
 		808220EF1E6AE00400BDDFE5 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		808220F11E6AE01300BDDFE5 /* RegisterVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterVC.storyboard; sourceTree = "<group>"; };
 		808220F31E6AE01F00BDDFE5 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -54,12 +64,6 @@
 		80FE23CD1E6B5B41001F3F51 /* FaceRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceRegisterVC.swift; sourceTree = "<group>"; };
 		80FE23CF1E6B5B4F001F3F51 /* FaceRegisterVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FaceRegisterVC.storyboard; sourceTree = "<group>"; };
 		80FE23D11E6B6BFB001F3F51 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		60ED07891E6AF7B900687F40 /* GamePhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePhotoCell.swift; sourceTree = "<group>"; };
-		60ED078A1E6AF7B900687F40 /* GamePhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePhotoCell.xib; sourceTree = "<group>"; };
-		60ED078F1E6B019F00687F40 /* GameResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResultVC.swift; sourceTree = "<group>"; };
-		60ED07911E6B020400687F40 /* GameResultVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameResultVC.storyboard; sourceTree = "<group>"; };
-		60ED07971E6B2EAB00687F40 /* GameResultWaitingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResultWaitingVC.swift; sourceTree = "<group>"; };
-		60ED07991E6B2EBB00687F40 /* GameResultWaitingVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameResultWaitingVC.storyboard; sourceTree = "<group>"; };
 		E13E64095B177F54ED5D8FE7 /* Pods-hack2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hack2.release.xcconfig"; path = "Pods/Target Support Files/Pods-hack2/Pods-hack2.release.xcconfig"; sourceTree = "<group>"; };
 		EE941A13F833D1EDA96778DD /* Pods-hack2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hack2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hack2/Pods-hack2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,9 +112,9 @@
 		60ED076D1E6ABFA500687F40 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				805E52E81E6B7803000145AD /* Account */,
 				60ED07781E6AC18E00687F40 /* Etc */,
 				60ED07771E6AC18400687F40 /* Util */,
-				60ED076F1E6AC05700687F40 /* Register */,
 				60ED07701E6AC06A00687F40 /* Login */,
 				60ED076F1E6AC05700687F40 /* Register */,
 				60ED07721E6AC08A00687F40 /* Main */,
@@ -209,6 +213,15 @@
 				503EE8F49C8EEF79A8C777C6 /* Pods_hack2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		805E52E81E6B7803000145AD /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				805E52E91E6B7812000145AD /* AccountVC.swift */,
+				805E52EB1E6B781B000145AD /* AccountVC.storyboard */,
+			);
+			name = Account;
 			sourceTree = "<group>";
 		};
 		808220F71E6AE1A200BDDFE5 /* Base */ = {
@@ -315,6 +328,7 @@
 				60ED077E1E6AC21C00687F40 /* MainVC.storyboard in Resources */,
 				60ED07921E6B020400687F40 /* GameResultVC.storyboard in Resources */,
 				60ED07661E6AB9E200687F40 /* LaunchScreen.storyboard in Resources */,
+				805E52EC1E6B781B000145AD /* AccountVC.storyboard in Resources */,
 				808220F61E6AE05800BDDFE5 /* LoginVC.storyboard in Resources */,
 				60ED079A1E6B2EBB00687F40 /* GameResultWaitingVC.storyboard in Resources */,
 				60ED07631E6AB9E200687F40 /* Assets.xcassets in Resources */,
@@ -386,6 +400,7 @@
 				60ED07841E6AC2AC00687F40 /* MainVC.swift in Sources */,
 				80FE23CE1E6B5B41001F3F51 /* FaceRegisterVC.swift in Sources */,
 				80FE23C91E6B31B2001F3F51 /* DetailRegisterVC.swift in Sources */,
+				805E52EA1E6B7812000145AD /* AccountVC.swift in Sources */,
 				60ED07981E6B2EAB00687F40 /* GameResultWaitingVC.swift in Sources */,
 				60ED078B1E6AF7B900687F40 /* GamePhotoCell.swift in Sources */,
 				60ED07901E6B019F00687F40 /* GameResultVC.swift in Sources */,

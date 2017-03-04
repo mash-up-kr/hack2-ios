@@ -156,7 +156,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="faceImage" destination="fAb-nt-qVW" id="JHY-T3-fMb"/>
                         <outlet property="faceImageView" destination="fAb-nt-qVW" id="V5K-jF-xEU"/>
                     </connections>
                 </viewController>
