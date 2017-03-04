@@ -41,6 +41,8 @@ class GameVC: UIViewController, UICollectionViewDataSource, UICollectionViewDele
         self.photoCollectionView.dataSource = self
         self.photoCollectionView.delegate = self
         
+        self.photoCollectionView.register(UINib.init(nibName: "GamePhotoCell", bundle: nil), forCellWithReuseIdentifier: "photoCell")
+        
         self.resetUISetting()
         
     }
@@ -66,7 +68,7 @@ class GameVC: UIViewController, UICollectionViewDataSource, UICollectionViewDele
         
     }
     
-    func requestGameInfo(gameId gameId:Int, gameStage:StageType) {
+    func requestGameInfo(_ gameId:Int, gameStage:StageType) {
         
         var urlString = "http://192.168.0.25:8080/api/games"
         urlString.append("/\(gameId)")
@@ -84,7 +86,6 @@ class GameVC: UIViewController, UICollectionViewDataSource, UICollectionViewDele
         case .Letter:
             urlString.append("/SCRIPT")
             break
-        default: break
         }
         
 //        if let url = URL(string: urlString) {
@@ -136,15 +137,18 @@ class GameVC: UIViewController, UICollectionViewDataSource, UICollectionViewDele
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as? GamePhotoCell {
-            var currentGamePhotoData: GamePhotoData = self.gamePhotoDataArray[indexPath.row]
+//            var currentGamePhotoData: GamePhotoData = self.gamePhotoDataArray[indexPath.row]
             
-            currentGamePhotoData.isSelected = !currentGamePhotoData.isSelected
+//            currentGamePhotoData.isSelected = !currentGamePhotoData.isSelected
+//            
+//            if (currentGamePhotoData.isSelected) {
+//                cell.checkedImageView.image = UIImage(named: "photoChecked")
+//            } else {
+//                cell.checkedImageView.image = UIImage(named: "photoWhiteOval")
+//            }
             
-            if (currentGamePhotoData.isSelected) {
-                cell.checkButton.setImage(UIImage(named: "photoWhiteOval"), for: UIControlState.normal)
-            } else {
-                cell.checkButton.setImage(UIImage(named: "photoChecked"), for: UIControlState.normal)
-            }
+            cell.checkedImageView.image = UIImage(named: "photoChecked")
+            self.photoCollectionView.reloadData()
         }
     }
     

@@ -56,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P8U-hK-Uyd">
-                                <rect key="frame" x="17" y="178" width="380" height="558"/>
+                                <rect key="frame" x="17" y="178" width="380" height="538"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="10" id="dIP-Q4-xlI">
                                     <size key="itemSize" width="180" height="180"/>
@@ -86,7 +86,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UDl-X9-XTk" firstAttribute="top" secondItem="P8U-hK-Uyd" secondAttribute="bottom" id="0m6-RP-5ZS"/>
+                            <constraint firstItem="UDl-X9-XTk" firstAttribute="top" secondItem="P8U-hK-Uyd" secondAttribute="bottom" constant="20" id="0m6-RP-5ZS"/>
                             <constraint firstItem="Eak-m0-xTc" firstAttribute="leading" secondItem="f0S-2v-8v8" secondAttribute="leading" constant="20" id="Jn2-3I-UqK"/>
                             <constraint firstItem="P8U-hK-Uyd" firstAttribute="top" secondItem="LgE-4C-BTq" secondAttribute="bottom" constant="62" id="Mu9-xX-oXa"/>
                             <constraint firstItem="P8U-hK-Uyd" firstAttribute="leading" secondItem="f0S-2v-8v8" secondAttribute="leading" constant="17" id="MxZ-xw-DOs"/>

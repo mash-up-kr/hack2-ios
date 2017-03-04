@@ -11,7 +11,7 @@ import UIKit
 class GamePhotoCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var checkButton: UIButton!
+    @IBOutlet weak var checkedImageView: UIImageView!
 
     override func awakeFromNib() {
         
