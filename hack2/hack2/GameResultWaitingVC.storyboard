@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ow8-Ao-yAF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Result WaitingVC-->
+        <scene sceneID="C1X-m9-npz">
+            <objects>
+                <viewController storyboardIdentifier="GameResultWaitingVC" id="Ow8-Ao-yAF" customClass="GameResultWaitingVC" customModule="hack2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bae-q3-9f8"/>
+                        <viewControllerLayoutGuide type="bottom" id="0R5-D0-uFA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m4h-5W-ji9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="PYy-vu-5jv">
+                                <rect key="frame" x="102.5" y="125.5" width="170" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="S2e-98-52X"/>
+                                    <constraint firstAttribute="height" constant="136" id="fvs-d2-Vyg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결과 집계중" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xv-be-3Cw">
+                                <rect key="frame" x="118.5" y="297.5" width="138" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="textColor" red="0.066666666666666666" green="0.78823529411764703" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심사 결과는 5초 뒤에 사라집니다.  마음에 드는 이성이라면 반드시 캡쳐하세요!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBw-u0-opJ">
+                                <rect key="frame" x="44" y="413" width="287" height="41"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXe-yb-gIp">
+                                <rect key="frame" x="31" y="556" width="313" height="59"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.81568627449999997" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="na6-L3-hZg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <state key="normal" title="결과 확인하러 가기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resultCheckButtonPressed:" destination="Ow8-Ao-yAF" eventType="touchUpInside" id="f9R-W7-jdK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cXe-yb-gIp" secondAttribute="trailing" constant="15" id="2ds-Ui-ijK"/>
+                            <constraint firstItem="2xv-be-3Cw" firstAttribute="centerX" secondItem="m4h-5W-ji9" secondAttribute="centerX" id="Gvi-A6-Dc7"/>
+                            <constraint firstItem="KBw-u0-opJ" firstAttribute="centerY" secondItem="m4h-5W-ji9" secondAttribute="centerY" constant="100" id="HRD-iX-ogW"/>
+                            <constraint firstItem="2xv-be-3Cw" firstAttribute="top" secondItem="PYy-vu-5jv" secondAttribute="bottom" constant="36" id="JP7-cI-DRg"/>
+                            <constraint firstItem="cXe-yb-gIp" firstAttribute="leading" secondItem="m4h-5W-ji9" secondAttribute="leadingMargin" constant="15" id="LCi-t8-olh"/>
+                            <constraint firstItem="KBw-u0-opJ" firstAttribute="centerX" secondItem="m4h-5W-ji9" secondAttribute="centerX" id="MCw-bd-j2O"/>
+                            <constraint firstItem="PYy-vu-5jv" firstAttribute="centerY" secondItem="m4h-5W-ji9" secondAttribute="centerY" constant="-140" id="SZF-1a-Kw4"/>
+                            <constraint firstItem="PYy-vu-5jv" firstAttribute="centerX" secondItem="m4h-5W-ji9" secondAttribute="centerX" id="ftU-62-PgR"/>
+                            <constraint firstItem="0R5-D0-uFA" firstAttribute="top" secondItem="cXe-yb-gIp" secondAttribute="bottom" constant="52" id="wzm-dw-YEN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultCheckButton" destination="cXe-yb-gIp" id="MCM-aR-WAF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgd-dn-mHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="222" height="175"/>
+    </resources>
+</document>
